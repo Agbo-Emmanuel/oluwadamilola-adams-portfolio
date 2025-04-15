@@ -317,7 +317,7 @@ body{
 
 .major_campaign_card{
     width: calc((100% / 3) - 30px);
-    height: auto;
+    height: auto !important;
     padding: 20px;
     background-color: #fff;
     border-radius: 6px;
@@ -341,7 +341,7 @@ body{
 
 .major_campaign_card p{
     color: #000;
-    font-size: 16px;
+    font-size: 15px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     margin-bottom: 20px;
