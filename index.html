@@ -8,13 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tenor+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="./index.css"/>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <title>Oluwadamilola Adams</title>
 </head>
 <body>
     <div class="hero_container">
         <div class="header_body" id="header">
             <div class="header_logo_body">
-                <a href="#home" class="header_nav__link">OLUWADAMILOLA ADAMS</a>
+                <a href="/" class="header_nav__link">OLUWADAMILOLA ADAMS</a>
             </div>
             <div class="header_nav_container">
                 <a class="header_nav__link" href="#about">About</a>
@@ -75,37 +79,54 @@
 
         <div class="major_campaign_section" id="major-campaigns">
             <h1>Major Campaigns</h1>
-            <div class="major_campaign_card_container">
-                <div class="major_campaign_card">
-                    <!-- <div class="major_campaign_card_image">
-
-                    </div> -->
-                    <h3>Ciroc x BBNaija</h3>
-                    <p>Drove ₦1.2B in attributed sales, 778M impressions, and 251k brand mentions.</p>
-                    <a href="/cirocxbbnaija.html">
-                        View Case Study
-                    </a>
+            <div class="swiper major_campaign_card_container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide major_campaign_card">
+                        <!-- <div class="major_campaign_card_image">
+    
+                        </div> -->
+                        <h3>Ciroc x BBNaija</h3>
+                        <p>Drove ₦1.2B in attributed sales, 778M impressions, and 251k brand mentions.</p>
+                        <a href="/cirocxbbnaija.html">
+                            View Case Study
+                        </a>
+                    </div>
+                    <div class="swiper-slide major_campaign_card">
+                        <!-- <div class="major_campaign_card_image">
+    
+                        </div> -->
+                        <h3>Teckno x AFCON</h3>
+                        <p>Achieved Guinness World Record with 26.7K AR submissions in 24 hours.</p>
+                        <a href="/tecnoxafcon.html">
+                            View Case Study
+                        </a>
+                    </div>
+                    <div class="swiper-slide major_campaign_card">
+                        <!-- <div class="major_campaign_card_image">
+    
+                        </div> -->
+                        <h3>#KulosaEffect</h3>
+                        <p>Generated 129K+ posts, 55M+ views, and boosted Oxlade's following by 320%</p>
+                        <a href="/kulosaeffect.html">
+                            View Case Study
+                        </a>
+                    </div>
+                    <div class="swiper-slide major_campaign_card">
+                        <!-- <div class="major_campaign_card_image">
+    
+                        </div> -->
+                        <h3>Johnnie Walker</h3>
+                        <p>Acheived 2021 Loeries Award in Legacy activation and 12.6M campaign reach</p>
+                        <a href="/johnniewalker.html">
+                            View Case Study
+                        </a>
+                    </div>
                 </div>
-                <div class="major_campaign_card">
-                    <!-- <div class="major_campaign_card_image">
 
-                    </div> -->
-                    <h3>Teckno x AFCON</h3>
-                    <p>Achieved Guinness World Record with 26.7K AR submissions in 24 hours.</p>
-                    <a href="/tecnoxafcon.html">
-                        View Case Study
-                    </a>
-                </div>
-                <div class="major_campaign_card">
-                    <!-- <div class="major_campaign_card_image">
-
-                    </div> -->
-                    <h3>#KulosaEffect</h3>
-                    <p>Generated 129K+ posts, 55M+ views, and boosted Oxlade's following by 320%</p>
-                    <a href="/kulosaeffect.html">
-                        View Case Study
-                    </a>
-                </div>
+                <!-- Optional Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
 
@@ -228,6 +249,33 @@
     </div>
 
     <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Initialization -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+          loop: true,
+          spaceBetween: 30,
+          slidesPerView: 3,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 2
+            },
+            1024: {
+              slidesPerView: 3
+            }
+          }
+        });
+    </script>
 
 </body>
 </html>
