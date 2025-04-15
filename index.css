@@ -536,10 +536,6 @@ body{
     padding: 0px 20px;
 }
 
-.swiper-wrapper{
-    
-}
-
 .swiper-slide{
     /* background: blue; */
     width: calc((100% / 3) - 30px);
@@ -667,6 +663,43 @@ body{
     color: #457B9D;
     font-size: 24px;
 }
+
+.major_campaign_detail_body{
+    width: 100%;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.major_campaign_item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.major_campaign_item h3{
+    color: #2c9ce2;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.major_campaign_item p{
+    color: #000;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.major_campaign_item ul li{
+    color: #000;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
 
 
 @keyframes fadeUp {
@@ -925,6 +958,26 @@ body{
     }
     .industry_engagement_card p{
         font-size: 14px;
+    }
+
+    .major_campaign_detail_body{
+        padding: 60px 16px;
+    }
+
+    .major_campaign_item h3{
+        font-size: 26px;
+    }
+    
+    .major_campaign_item p{
+        font-size: 14px;
+    }
+    
+    .major_campaign_item ul li{
+        font-size: 14px;
+    }
+
+    .major_campaign_item ul{
+        padding: 0 0 0 16px;
     }
 
 }
