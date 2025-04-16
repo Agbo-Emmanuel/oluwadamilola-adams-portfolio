@@ -298,6 +298,7 @@ body{
     flex-direction: column;
     gap: 30px;
     background-color: #000;
+    position: relative;
 }
 
 .major_campaign_section h1{
@@ -383,11 +384,11 @@ body{
 }
 
 .swiper-button-next{
-    right: -10px !important;
+    right: 20px !important;
 }
 
 .swiper-button-prev{
-    left: -10px !important;
+    left: 20px !important;
 }
 
 .swiper-button-next::after,
