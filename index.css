@@ -734,58 +734,6 @@ body{
         line-height: 24px;
     }
 
-    .core_competence_section{
-        padding: 40px 16px 50px;
-    }
-    
-    .core_competence_section h1{
-        font-size: 24px;
-    }
-    
-    .core_competence_card{
-        width: 100%;
-    }
-
-    .core_competence_card p{
-        line-height: 22px;
-    }
-
-    .featured_projects_section{
-        padding: 40px 16px 50px;
-    }
-
-    .projects_top{
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .projects_top_text{
-        width: 100%;
-    }
-    
-    .projects_top_text h1{
-        font-size: 24px;
-        margin-bottom: 6px;
-        text-align: center;
-    }
-
-    .projects_top_text p{
-        line-height: 20px;
-        text-align: center;
-    }
-
-    .project_card{
-        flex-direction: column;
-    }
-    .project_image{
-        width: 100%;
-    }
-
-    .project_text{
-        width: 100%;
-        padding: 30px 16px;
-    }
-
     .major_campaign_section{
         padding: 50px 16px;
     }
@@ -837,6 +785,19 @@ body{
 
     .major_campaign_item ul{
         padding: 0 0 0 16px;
+    }
+
+    .image_carousel_section{
+        padding: 50px 16px !important;
+    }
+
+    .image_carousel_item{
+        width: 100%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none !important;
     }
 
 }
