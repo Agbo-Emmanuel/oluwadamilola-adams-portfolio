@@ -389,6 +389,87 @@ body{
     background: #2c9ce2;
 }
 
+.passion_project_section{
+    width: 100%;
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #000;
+}
+
+.passion_project_section h1{
+    color: #2c9ce2;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.passion_project_card_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.passion_project_card{
+    width: calc((100% / 3) - 20px);
+    height: max-content;
+    padding: 14px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.passion_project_card_image{
+    width: 100%;
+    height: 300px;
+    /* background-color: red; */
+}
+
+.passion_project_card_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.passion_project_card h3{
+    color: #000;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.passion_project_card p{
+    color: #000;
+    font-size: 14.5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.passion_project_card_link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.passion_project_card_link a{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #457B9D;
+    font-size: 24px;
+}
+
 .industry_engagements_section{
     width: 100%;
     padding: 50px 80px;
@@ -798,6 +879,18 @@ body{
     .swiper-button-next,
     .swiper-button-prev {
       display: none !important;
+    }
+    
+    .passion_project_section{
+        padding: 50px 16px;
+    }
+
+    .passion_project_card_container{
+        flex-direction: column;
+    }
+
+    .passion_project_card{
+        width: 100%;
     }
 
 }
