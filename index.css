@@ -910,6 +910,12 @@ body{
         padding: 0 0 0 16px;
     }
 
+    .major_campaign_item_image_container{}
+
+    .major_campaign_item_image{
+        width: 100%;
+    }
+
     .image_carousel_section{
         padding: 50px 16px !important;
     }
